@@ -16,9 +16,10 @@ public class Food {
 
     public void setName(String name) {
         if(name.length()<2 || name.trim().isEmpty())
-            this.name = name;
-        else
             throw new IllegalArgumentException(name + "must have 2 characters and should not be having blank spaces.");
+        else
+            this.name = name;
+
     }
 
     public void setCalories(int calories) {
@@ -40,5 +41,9 @@ public class Food {
             throw new IllegalArgumentException(protein+"must be in range 0 to 100.");
         else
             this.protein = protein;
+    }
+
+    public String toString(){
+        return name + " $ " + price;
     }
 }
