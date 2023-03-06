@@ -7,6 +7,13 @@ public class Food {
     private double price;
     private int protein;
 
+    public Food(String name, int calories, double price, int protein) {
+        setName(name);
+        setCalories(calories);
+        setPrice(price);
+        setProtein(protein);
+    }
+
     public void setName(String name) {
         if(name.length()<2 || name.trim().isEmpty())
             this.name = name;
