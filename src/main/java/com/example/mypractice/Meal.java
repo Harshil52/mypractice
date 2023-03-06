@@ -18,4 +18,11 @@ public class Meal {
     public void removeFood(Food food){
         meal.remove(food);
     }
+
+    public int getCalories(){
+        int totalcalories=0;
+        for (Food food: meal)
+            totalcalories = totalcalories + food.getCalories();
+        return totalcalories;
+    }
 }

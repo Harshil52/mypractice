@@ -14,12 +14,17 @@ public class Food {
         setProtein(protein);
     }
 
+
     public void setName(String name) {
         if(name.length()<2 || name.trim().isEmpty())
             throw new IllegalArgumentException(name + "must have 2 characters and should not be having blank spaces.");
         else
             this.name = name;
 
+    }
+
+    public int getCalories() {
+        return calories;
     }
 
     public void setCalories(int calories) {
