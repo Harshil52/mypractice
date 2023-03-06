@@ -39,4 +39,8 @@ public class Meal {
             totalProtein = totalProtein + food.getProtein();
         return totalProtein;
     }
+
+    public String toString(){
+        return "Meal: "+ meal.get(0) + ", "+ meal.get(1) + "|"  + " Total Price: $"+getTotalPrice();
+    }
 }
