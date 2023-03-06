@@ -45,6 +45,10 @@ public class Food {
             this.price = price;
     }
 
+    public int getProtein() {
+        return protein;
+    }
+
     public void setProtein(int protein) {
         if(protein<0 || protein>100)
             throw new IllegalArgumentException(protein+"must be in range 0 to 100.");

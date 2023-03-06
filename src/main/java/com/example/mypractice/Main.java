@@ -20,5 +20,6 @@ public class Main {
 
         System.out.printf("Total calories are :  " + meal1.getCalories());
         System.out.println("\nTotal price is : " + meal1.getTotalPrice());
+        System.out.println("Total protein are : "+meal1.getProtein());
     }
 }

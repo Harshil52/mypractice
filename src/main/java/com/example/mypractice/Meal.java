@@ -32,4 +32,11 @@ public class Meal {
             totalPrice = totalPrice + food.getPrice();
         return totalPrice;
     }
+
+    public int getProtein(){
+        int totalProtein = 0;
+        for (Food food:meal)
+            totalProtein = totalProtein + food.getProtein();
+        return totalProtein;
+    }
 }
