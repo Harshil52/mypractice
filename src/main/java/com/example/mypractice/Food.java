@@ -34,6 +34,10 @@ public class Food {
             this.calories = calories;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public void setPrice(double price) {
         if(price<0 || price>150)
             throw new IllegalArgumentException(price+"must be in range 0 to 150.");

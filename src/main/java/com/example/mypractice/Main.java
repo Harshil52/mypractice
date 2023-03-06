@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Food pizza = new Food("pizza",350,10.99,10);
-        Food burger = new Food("burger",460,5.25,20);
+        Food burger = new Food("burger",460,5.49,20);
         Food fries = new Food("fries",270,4.99,30);
 
         System.out.println(pizza.toString());
@@ -19,5 +19,6 @@ public class Main {
         meal1.removeFood(pizza);
 
         System.out.printf("Total calories are :  " + meal1.getCalories());
+        System.out.println("\nTotal price is : " + meal1.getTotalPrice());
     }
 }

@@ -20,9 +20,16 @@ public class Meal {
     }
 
     public int getCalories(){
-        int totalcalories=0;
+        int totalCalories=0;
         for (Food food: meal)
-            totalcalories = totalcalories + food.getCalories();
-        return totalcalories;
+            totalCalories = totalCalories + food.getCalories();
+        return totalCalories;
+    }
+
+    public double getTotalPrice(){
+        double totalPrice = 0;
+        for (Food food:meal)
+            totalPrice = totalPrice + food.getPrice();
+        return totalPrice;
     }
 }
